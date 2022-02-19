@@ -9,7 +9,7 @@ There are 4 different Mojang API scripts:
 - `mojang_uuid_to_username_history.py`
 
 ### `mojang_status.py`
-~~This one simply just checks status. Just run `$ python mojang_status.py` and it will display status of various API servers.
+~~This one simply just checks status. Just run `python mojang_status.py` and it will display status of various API servers.
 Status is color coded, `down` shows red, `fully operational` shows green and `partially down` shows yellow. Unrecognised
 server status shows white.~~
 
@@ -28,9 +28,10 @@ API Server `mojang.com`                           status `down`
 
 #### Update 2022-02-19
 Since 2021-10-08, Mojang has closed this service down and is unavailable. So in reaction to that, running
-`$ python mojang_status.py` will now display this instead:
+`python mojang_status.py` will now display this instead:
 
 ```
+$ python mojang_status.py
 This service was closed down by Mojang, due to incorrect responses.
 Status check was made for a legacy system that is currently not up to date.
 ```
