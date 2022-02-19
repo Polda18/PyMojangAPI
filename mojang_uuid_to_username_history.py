@@ -47,8 +47,8 @@ def main():
     
     # Display data
     print(f"UUID: {useruuid}", end='\n\n')
-    print('Username'.ljust(30), end='')
-    print('Change Timestamp')
+    print('Username'.ljust(30), end='Change Timestamp\n')
+    #print('Change Timestamp')
     print('-------------------------------------------------------------------')
     for row in response:
         print(row['name'].ljust(30), end='')

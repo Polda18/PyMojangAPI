@@ -8,7 +8,7 @@
 # ------------------------------------------------------------------------------------
 
 # Import necessary libraries
-import json
+#import json
 
 from requests import get
 from termcolor import colored as color
@@ -45,11 +45,11 @@ def main():
         exit(3)
     
     # Display data
-    print("Username".ljust(20), end='')
-    print("UUID")
+    print("Username".ljust(20), end="UUID\n")
+    #print("UUID")
     print("--------------------------------------------------------")
-    print(username.ljust(20), end='')
-    print(useruuid)
+    print(username.ljust(20), end=f'{useruuid}\n')
+    #print(useruuid)
 
 # Run only if fetched through main payload
 if __name__ == '__main__':

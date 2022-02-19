@@ -8,13 +8,19 @@
 # ------------------------------------------------------------------------------------
 
 # Import necessary libraries
-import json
+#import json
 
 from requests import get
 from termcolor import colored as color
 
 # Create payload
 def main():
+    # This is new response
+    print("This service was closed down by Mojang, due to incorrect responses.")
+    print("Status check was made for a legacy system that is currently not up to date.")
+
+# For historical reasons, I decided to rename the old code - it is not used anywhere
+def old_main():
     # Fetch data
     request_url = "https://status.mojang.com/check"
     response = get(request_url)
@@ -48,8 +54,8 @@ def main():
                 colorcode = 'white'
             
             # Display server status
-            print(f"API Server `{server}`".ljust(50), end='')
-            print(f"status `{color(status, colorcode)}`")
+            print(f"API Server `{server}`".ljust(50), end=f"status `{color(status, colorcode)}`\n")
+            #print(f"status `{color(status, colorcode)}`")
 
 # Run only if fetched through main payload
 if __name__ == "__main__":
